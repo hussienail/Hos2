@@ -1,0 +1,6 @@
+<div style="display: none;" class="vieYoutube">
+<img style="min-height: 60px;width: 100%;float: left;" alt="">
+<span style="margin-top: -56px;float: left;background-color: #ffffffa1;color: red;padding: 2px 0;text-align: center;width: 100%;" class="dots youtubeTitl"></span>
+<button onclick="$('.tboxbc').val($('.youtubeSend').attr('youtube'));sendbc();$('.vieYoutube').hide();" style="margin: 0 2px;width: 48%;margin-top: -28px;text-align: center;" class="youtubeSend fa fa-send  fr btn btn-primary">ارسال الى الحائط</button>
+<button onclick="" style="margin: 0 2px;width: 48%;margin-top: -28px;text-align: center;" class="youtubeCloos fa fl btn btn-primary">الغاء</button>
+</div>
