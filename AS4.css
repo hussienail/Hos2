@@ -7,7 +7,7 @@
 a.btn.minix.fa.fa-times.fr{color:#fff!important;border-radius:4px;padding:1px 4px 2px 5px;margin-top:6px;background-repeat:repeat-x;border-color:#fff!important;background-image:linear-gradient(to bottom,#f8f9fa 0,#dee2e6 100%)!important;margin-left:1px;width:13px;margin-right:2px}
 span.minix.badge.border,span.bwall.minix.badge.border,span.brooms.minix.badge.border{display:none!important}
 span.busers.minix.badge.border{display:inline!important;border:transparent solid 1px!important;background-color:transparent!important}
-span.bwall.minix.badge.border,span.brooms.minix.badge.border{display:none!important}
+span.bwall.minix.badge.border,span.brooms.minix.badge.border{}
 ul.nav.nav-tabs.fl li a:hover{background-color:#1aa3ba;color:#fff}
 ul.nav.nav-tabs.fl li .fa-user-plus:before{color:red;content:"\f097";-webkit-animation:mymove .5s infinite;animation:mymove .5s infinite}
 @-webkit-keyframes mymove{from{color:red}to{color:#fff}}
@@ -16,7 +16,7 @@ a#عاصم{color:#fff!important;position:absolute;right:1px}
 .fl.fa.fa-sign-in.btn.btn-primary.dots.roomh.border.corner{background-color:#039be5!important;padding:1px 4px!important;pointer-events:none}
 .ae.label.label-primary.fa.fa-gear{padding:7px 5px 5px 13px;border-radius:0;margin-left:32px!important}
 label#asim22{display:inline!important;padding:7px 5px 5px 13px;border-radius:0;margin-left:-163px!important}
-.ae.fa.label.fa-commenting-o.label-primary{padding:7px 5px 5px 13px;margin-left:-4px!important;display:none;border-radius:0}
+.ae.fa.label.fa-commenting-o.label-primary{padding:7px 5px 5px 13px;margin-left:-4px!important;border-radius:0}
 .ae.fa.label.label-primary.fa-users{padding:7px 5px 5px 13px;border-radius:0;margin-left:-3px!important}
 .fa-commenting-o:before{content:"\f044";margin-right:4px}
 .ae.fa.chats.label.fa-comment.label-primary{padding:7px 13px 5px;margin-left:-7px!important;border-radius:0}
@@ -136,8 +136,7 @@ label.asim.ae.fa.label.label-primary{padding:7px 10px 5px;margin-left:-4px!impor
 .ae.fa.label.label-primary.fa-users.btnClAlGr:before{content:"\f0c0"}
 .fa-envelope:before{content:"\f0e0"}
 .fa-user:before{content:"\f02e"}
-.fa-group:before,.fa-users:before{content:"\f19c"}
-.ae.fa.chats.label.label-primary.fa-comment:before{content:"\f0e0";display:inline!important}
+.fa-group:before,.fa-users:before{}
 .fa-gear:before,.fa-cog:before{content:"\f085"}
 .fa-send:before,.fa-paper-plane:before{content:"\f122";padding:0 2px 0 0}
 .fa-share-alt:before{content:"\f0c5"}
