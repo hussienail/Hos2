@@ -40,7 +40,7 @@ a.btn.minix.fa.fa-times.fr {
  margin-top:6px;
  background-repeat:repeat-x;
  border-color:#fff!important;
- background-image:linear-gradient(to bottom,#f8f9fa 0,#dee2e6 100%)!important;
+ background-image:linear-gradient(to bottom,#FADFE8 0,#dee2e6 100%)!important;
  margin-left:1px;
  width:13px;
  margin-right:2px
@@ -138,7 +138,7 @@ label#asim22 {
  border-bottom-right-radius:0!important
 }
 label.fl.nosel.label.pnhead {
- background-color:#1391a7
+ background-color:#4BA779
 }
 iframe#asim30 {
  height:66px;
@@ -180,7 +180,7 @@ a#asim10 {
  padding:1px!important;
  height:23px!important;
  color:#fff!important;
- background-color:#43a2a1!important;
+ background-color:#4BA779!important;
  margin-left:-8px
 }
 .badge {
@@ -203,7 +203,7 @@ div#menu-l {
  border:1px solid #afabab
 }
 .primaryborder {
- border-color:#008e91!important;
+ border-color:#59C790!important;
  border-radius:0!important
 }
 button.fa.fa-sign-out.fl.btn.btn-primary {
@@ -298,7 +298,7 @@ button.fa.fa-phone.call.fl.btn.btn-success {
  margin-top:2px!important
 }
 .tablebox.footer.light.fl {
- border-top:1px solid #aee3d1
+ border-top:1px solid #80E8A2
 }
 img.fl.nosel.emobox {
  margin-top:-4px
@@ -400,7 +400,7 @@ button.btn.btn-primary.hand.borderg.corner.fa.fa-ban {
  height:27px;
  background-repeat:repeat-x;
  border-color:#b92c28;
- background-image:linear-gradient(to bottom,#d9534f 0,#c12e2a 100%);
+ background-image:linear-gradient(to bottom,#d9534f 0,#ffffff 100%);
  background-color:#c12e2a!important
 }
 .fa-user:before {
@@ -422,7 +422,7 @@ a.btn.minix.fa.fa-thumbs-up.fr {
  margin-top:6px;
  background-repeat:repeat-x;
  border-color:#b92c28;
- background-image:linear-gradient(to bottom,#d9534f 0,#c12e2a 100%);
+ background-image:linear-gradient(to bottom,#d9534f 0,#ffffff 100%);
  margin-left:3px
 }
 a.btn.minix.fa.fa-times.fr,
@@ -445,7 +445,7 @@ a.btn.minix.fa.fa-comment.fr {
  width:12%!important;
  padding:7px 2px!important;
  font-size:12px!important;
- background-image:linear-gradient(to bottom,#d9534f 0,#c12e2a 100%);
+ background-image:linear-gradient(to bottom,#d9534f 0,#FFFFFF 100%);
  background-color:#d9534f!important;
  color:#fff
 }
@@ -799,7 +799,7 @@ ul.nav.nav-tabs {
  margin-top:20px;
  border-left:2px solid #f7d322;
  border-right:2px solid #f7d322;
- background-image:-webkit-linear-gradient(45deg,#f9f9f9 25%,#d8f7fb82 25%,#e5fcff 50%,#a7f2ff6e 50%,rgba(148,233,247,0.11) 75%,#e6f7f9 75%,#f9f9f9)!important;
+ background-image:-webkit-linear-gradient(45deg,#f9f9f9 25%,#d8f7fb82 25%,#FFE6F1 50%,#a7f2ff6e 50%,rgba(148,233,247,0.11) 75%,#e6f7f9 75%,#f9f9f9)!important;
  background:#ebebeb
 }
 div#l1 {
