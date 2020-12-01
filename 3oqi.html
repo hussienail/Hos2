@@ -410,31 +410,6 @@ div#l1>input,div#l2>input,div#l3>input {
 														<div onclick="$('.dpnl').hide();" class="tablebox footer fl light" style="border-bottom-right-radius: 1em;width:100%; padding: 1px;">
 															<button onclick="send('rleave',{});" style=" margin-left:2px;margin-top:2px;" class="fa fa-sign-out fl btn btn-primary">&nbsp;</button>
 
-															<img tabindex="0" role="button" data-toggle="popover" data-trigger="focus" class="fl nosel emobox" style="padding:5px;width:34px;"
-																				src="imgs/emoii.gif">
-															<textarea id="tbox" onclick="$('.pop').pop('hide');setTimeout(function(){$('#d2').scrollTop($('#d2')[0].scrollHeight);},600);"
-																									placeholder="اكتب رسالتك هنا" class="fl corner tbox filw" style="background-color: rgb(170, 170, 175);"></textarea>
-															<button onclick="Tsend();" style=" margin-left:2px;margin-top:2px;" class="fa fa-send fl btn btn-primary">إرسال</button>
-
-														</div>
-														<div id="d0" onclick=" " class="nosel fl  bg" style="padding-left: 1px; margin-top: 1px; width: 100%;  ">
-															<label title="المتواجدين" href="#" onclick="$('.pnhead').text($(this).attr('title'));setTimeout(function(){$('#users').scrollTop(0);},100);$('.dpnl').show();$('#usearch').val('');" data-toggle="tab" data-target="#users" class="ae fa label label-primary fa-user"><span class="busers minix  badge border" style="margin-top:-8px;padding:1px 4px;">0</span></label>
-															<label title="المحادثات الخاصه" href="#" onclick="$('.pnhead').text($(this).attr('title'));hl($(this),'primary');setTimeout(function(){$('#users').scrollTop(0);},100);$('.dpnl').show();" data-toggle="tab" data-target="#chats" class="ae fa chats label label-primary fa-comment"><span class=" minix  badge border" style="margin-top:-8px;padding:1px 4px;">0</span></label>
-															<label title="غرف الدردشه" href="#" onclick="$('.pnhead').text($(this).attr('title'));$('.dpnl').show();" data-toggle="tab" data-target="#rooms" class="ae fa label label-primary fa-users"><span class="brooms minix  badge border" style="margin-top:-8px;padding:1px 4px;">0</span>الغرف</label>
-															<label title="الحائط" href="#" onclick="$('.pnhead').text($(this).attr('title'));$('.dpnl').show();setTimeout(function(){$('#d2bc').scrollTop(0);},100);hl($(this),'primary');$(this).find('.bwall').text('0');bcc=0;" data-toggle="tab" data-target="#wall" class="ae fa label label-primary fa-commenting-o"><span class="bwall  minix badge border" style="margin-top:-8px;padding:1px 4px;">0</span>الحائط</label>
-                                                            <label title="الإعدادات" href="#" onclick="$('.pnhead').text($(this).attr('title'));$('.dpnl').show();" data-toggle="tab" data-target="#settings" class="ae label label-primary fa fa-gear">الإعدادات</label>
-                                                            <label title="المحادثات الجماعية" href="#" onclick="$('.pnhead').text($(this).attr('title'));setTimeout(function(){$('#grubesAll').scrollTop(0);},100);$('.dpnl').show();hl($('.btnClAlGr'), 'primary');" data-toggle="tab" data-target="#grubesAll" style="font-weight: 100 !important;" class="ae fa label label-primary fa-users btnClAlGr"> &nbsp;</label>
-
-														</div>
-													</div>
-													<div class="dpnl bg   tab-content" style="display:none;border: 1px solid; border-top-left-radius: 0.5em; width: 290px; padding-top: 20px; padding-bottom: 8px; height: 407px; position: absolute; top: 36px;    ">
-														<label onclick="$(this).parent().hide();"  data-toggle="tab" data-target="#settings" class="label label-danger border nosel fa fa-close fr" style="margin-top:-18px;margin-bottom: 0px;margin-right:2px;border: 1px solid black;border-radius:6px;padding:6px 8px;">&nbsp;</label>
-														<label class="fl nosel label pnhead" style="margin:3px;margin-top:-18px;padding-left:10px;padding-right:10px;">المتواجدين</label>
-														<div id="users" style="height: 100%;width:100%;" class="light break tab-pane active">
-															<input type="search" id="usearch" placeholder=".. البحث" class="tbox bg border" style="width:100%;padding-left:5px;">
-															<label style=" margin: 0px!important;width:100%;margin:0px;padding:4px;border:none;border-radius:0px;display:none;margin-top:-1px!important;" class="nosel inr   fl uzr label label-primary">المتواجدين في الغرفه</label>
-															<label style=" margin: 0px!important;width:100%;margin:0px;border:none;padding:4px;border-radius:0px;display:none;" class="nosel ninr   fl uzr label label-primary">المتواجدين في الدردشه</label>
-
 														</div>
 														<div id="chats" style="height: 100%;width:100%;" class="break light tab-pane border"> 
 														</div>
@@ -448,8 +423,6 @@ div#l1>input,div#l2>input,div#l3>input {
 															<div class="tablebox fl light" style="width:100%;padding:4px;">
 																<button onclick="sendbc(true);" style="margin-left:2px; margin-right:3px;margin-top:2px;" class="fr fa fa-share-alt sndfilebc fl btn btn-primary"></button>
 																<img tabindex="0" role="button" data-toggle="popover" data-trigger="focus" class="fl emobc" style="padding:5px;width:34px;"
-																					src="imgs/emoii.gif">
-																<textarea placeholder="اكتب رسالتك هنا" class="fl tbox corner tboxbc filw" style="width: 49px;"></textarea>
 																<button onclick="sendbc();" style=" margin-top:2px;margin-left:2px;" class="fa fa-send sndbc fl btn btn-primary">إرسال</button>
 															</div>
 														</div>
@@ -459,41 +432,6 @@ div#l1>input,div#l2>input,div#l3>input {
                                                         <div id="grubesAll" style="height: 100%;width:100%;" class="light break tab-pane">
                                                             <label onclick="addGruMsg();" style="background-color: ghostwhite;color: black;margin:4px; padding:8px;width:98%;" class="addGruMsg label tc border  btn  label-info fl">محادثه جماعية</label>
                                                         </div>
-														<div id="settings" style="height: 100%;width:100%;padding:0px 5px;" class="break border light tab-pane ">
-															<center> <a class="label label-primary  fr">الملف الشخصي</a></center>
-															<div class="borderg corner" style="background-color: white;margin-top:2px;">
-																<div>  
-																	<div class=" label label-primary  ">الزخرفه</div>
-																	<br> <input class="stopic  corner   dots" style="width:80%;">
-																	<br>
-																	<div class="   label label-primary">الحاله</div>
-																	<br><input class="smsg  corner   dots" style="width:80%;">
-																	<br>
-																	<div class="   label label-primary">لون الإسم</div>
-																	<input class="color {pickerPosition:'top'} scolor  corner   dots" style="width: 80px; color: rgb(0, 0, 0); background-image: none; background-color: rgb(255, 255, 255);"
-																								autocomplete="off">
-																	<br>
-																	<div class="   label label-primary">لون الخط</div>
-																	<input class="color {pickerPosition:'top'} mcolor  corner   dots" style="width: 80px; color: rgb(0, 0, 0); background-image: none; background-color: rgb(255, 255, 255);"
-																								autocomplete="off">
-																	<br>
-																	<div class="   label label-primary">لون الخلفيه</div>
-																	<input class="color {pickerPosition:'top'} sbg  corner   dots" style="width: 80px; color: rgb(0, 0, 0); background-image: none; background-color: rgb(255, 255, 255);"
-																								autocomplete="off">
-																	<a class=" border  label mini label-success    hand fa fa-edit fr" style="padding:6px;margin-right:2px;" onclick="setprofile();">حـفـظ</a>
-
-																</div>
-															</div>
-
-															<select id="zoom" style="width: 98%;" class="fl btn btn-primary" onchange="document.body.style.zoom=$(this).val();fixSize(1);setv('zoom',$(this).val());">
-																<option value="1.20">%120 - حجم الخطوط</option>
-																<option value="1.10">%110 - حجم الخطوط</option>
-																<option value="1.05">%105 - حجم الخطوط</option>
-																<option seleceted="seleceted" value="1">%100 - حجم الخطوط</option>
-																<option value="0.95">%95 - حجم الخطوط</option>
-																<option value="0.9">%90 - حجم الخطوط</option>  
-															</select>
-															<script>
 																$(document).ready(function(){
 																	var vl=getv('zoom');
 																	if(vl==''){vl='1';setv('zoom',vl);}
@@ -530,16 +468,12 @@ div#l1>input,div#l2>input,div#l3>input {
 														<div class="modal-content" style="width:340px;margin:-1px;">
 															<div style="color:white;margin-top:-1px; padding: 0 2px;" onclick="$(this).parent().parent().parent().modal('hide');" class="modal-header label-primary">
 																<span class="pull-right clickable badge" style="padding: 2px 4px 3px;margin-top: 4px;"><i class="fa fa-times"></i></span>
-																<label style="margin:1px;max-width:90%;" class="mini dots nosel modal-title">إنشاء غرفه جديدة</label>
 															</div>
 															<div class="modal-body " style="padding:1px;">
 																<div class="light fl pro center break primaryborder" style="width:100%;border:1px solid lightgrey; padding:0px;margin:0px;">
 																	<center>
 																		<div class="fitimg u-pic" style="width:98%;height:200px;"></div> 
 																		<hr style="margin: 2px;">
-																		<a class="fl fa fa-ban btn ui-corner-all ui-shadow ui-btn ui-btn-inline umute borderg" style="margin: 2px 0 0 1px;color:red;width: 106px;text-align: center;">تجاهل</a>
-																		<a class="fl fa fa-check btn ui-corner-all ui-shadow ui-btn ui-btn-inline uunmute borderg" style="margin: 2px 0 0 1px;color:red;width: 106px;text-align: center;">إلغاء التجاهل</a>
-																		<a class="fl fa fa-heart btn ui-corner-all ui-shadow ui-btn ui-btn-inline ulike borderg" style="margin:2px;color:red;max-width: 110px;min-width: 100px;padding: 6px 4px;text-align: center;">0</a>
 																		<div style="margin:6px 4px 0 0;" class="fr rating-box">
 																			<span class="rating-star empty-star"></span>
 																			<span class="rating-star empty-star"></span>
@@ -555,65 +489,15 @@ div#l1>input,div#l2>input,div#l3>input {
 																			<div class="fl mini u-co" style="margin:4px;"></div>
 																			<div style="margin-right: 2px;" class="ui-corner-all ui-shadow fr u-room"></div> 
 																		</label> 
-																	</center>
-																	<a data-trigger="focus" tabindex="0" data-toggle="popover" class="fl fa fa-diamond btn ui-corner-all ui-shadow ui-btn ui-btn-inline ugift borderg"              style="color:blue;margin:2px;width: 106px;text-align: center;">ارسل هديه</a>
-																	<a class="fl fa fa-comment  btn ui-corner-all ui-shadow ui-btn ui-btn-inline upm borderg" style="color:black;margin:2px;width: 106px;text-align: center;">محادثه خاصه</a>
-
-																	<a class="fl fa fa-envelope-o btn ui-corner-all ui-shadow ui-btn ui-btn-inline unot borderg" style="color:black;margin:2px;width: 106px;text-align: center;">تنبيه</a>
-																	<a class="fl fa fa-search btn ui-corner-all ui-shadow ui-btn ui-btn-inline uh borderg" style="color:black;margin:2px;width: 106px;text-align: center;">كشف النكات</a>
-																	<a class="fl fa fa-ban btn ui-corner-all ui-shadow ui-btn ui-btn-inline udelpic borderg" style="color:maroon;margin:2px;width: 106px;text-align: center;">حذف الصوره</a>
-																	<a class="fl fa fa-ban  btn ui-corner-all ui-shadow ui-btn ui-btn-inline meiut borderg" style="color:#cc3232;margin:2px;width: 106px;text-align: center;">اسكات</a>
-
-																	<a class="fl fa fa-user-times btn ui-corner-all ui-shadow ui-btn ui-btn-inline urkick borderg" style="color:darkorchid;margin:2px;width: 106px;text-align: center;">طرد من الغرفه</a>
-																	<a class="fl fa fa-ban btn ui-corner-all ui-shadow ui-btn ui-btn-inline ukick borderg" style="color:crimson;margin:2px;width: 106px;text-align: center;">طرد</a>
-																	<a class="fl fa fa-ban btn ui-corner-all ui-shadow ui-btn ui-btn-inline uban borderg" style="color:crimson;margin:2px;width: 106px;text-align: center;">باند</a>
-																	<a class="fl fa fa-warning btn ui-corner-all ui-shadow ui-btn ui-btn-inline ureport borderg" style="color:black;margin:2px;width: 106px;text-align: center;">تبليغ</a>
-
-																	<div class=" nickbox fl" style="padding:4px;margin-top:2px;width:100%;">
-																		<hr style="margin: -4px 2px 3px;">
-																		<label class="label fr label-primary" style="border-radius: 10px 0;height: 32px;width: 19%;padding: 8px 0;">الزخرفه</label>
-																		<textarea class="form-control borderg primaryborder corner  fr u-topic" style="text-align: center;border-radius: 29px;margin-right: 4px; height:32px;padding:4px;width:60%;resize:none;"></textarea>
-																		<label style="border-radius: 0 10px;border: 1px solid;width: 17%;" class="btn u-nickc fl fa fa-save btn-primary">تغير</label>
-																	</div>
-																	<div class=" likebox fl" style="padding:4px;margin-top:2px;width:100%;">
-																		<hr style="margin: -10px 2px 3px;">
-																		<label class="label fr label-primary" style="border-radius: 10px 0;height: 32px;width: 19%;padding: 8px 0;">الاعجابات</label>
-																		<textarea class="form-control borderg primaryborder corner  fr ulikeins" style="text-align: center;margin-right: 4px; border-radius: 29px;
-																																																																																																		padding: 2px 5px;height:32px;padding:4px;width:60%;resize:none;"></textarea>
-																		<label style="border-radius: 0 10px;border: 1px solid;width: 17%;" class="btn u-likeins fl fa fa-save btn-primary">تغير</label>
-																	</div>
 
 																	<div class=" roombox fl" style="padding:4px;margin-top:2px;width:100%;">
 																		<hr style="margin: -10px 2px 3px;">
-																		<label class="label fr label-primary" style="border-radius: 10px 0;height: 32px;width: 19%;padding: 8px 0;">الغرفه</label>
-																		<select style="text-align: center;margin-right: 4px; border-radius: 29px;width:60%;display:inline;" class="primaryborder form-control userRoom selbox fr form-control">
-																		</select>
-																		<label style="border-radius: 0 10px;border: 1px solid;width: 17%;" class="btn u-roomleve fl fa fa-save btn-primary">نقل</label>
 																	</div>
 																	<div class="fl powerbox" style="width:100%;padding:4px;margin-top:2px;">
 																		<hr style="margin: -10px 2px 3px;">
 																		<table class="table " style="margin-bottom: 2px;"> 
 																			<thead class="">
 																				<tr>
-																					<th style="text-align: center;"><label class="fa fa-gear"></label></th>
-																					<th style="text-align: center;">المده بالأيام</th>
-																					<th style="text-align: center;">المجموعه</th> 
-																				</tr>
-																			</thead> 
-																			<tbody> 
-																				<tr>
-																					<td><a class="fa fa-check btn ui-corner-all ui-shadow ui-btn ui-btn-inline upower btn-primary" style="border-radius: 0 10px;border: 1px solid;">حفظ</a></td>
-																					<td><input style="text-align: center;border-radius: 29px;margin-right: 0px;height:32px;padding:4px;width: 100%;resize:none;" type="number" class="userdays form-control borderg primaryborder corner"></td>
-																					<td><select style="display:inline;text-align: center;margin-right: 4px;border-radius: 29px;height: 32px;padding: 4px;width: 150px;resize: none;" class="userpower selbox form-control borderg primaryborder corner ">
-																						</select></td>
-																				</tr>  
-																			</tbody>
-																		</table>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
 												</div>
 												<x id="uhtml" style="display:none;">
 													<div class="hand nosel fl uzr border" style="text-align:left;background-color:white;border-radius:0px!important;width:99%;margin: 0px 1px -1px 2px!important;padding:1px;">
@@ -690,8 +574,6 @@ div#l1>input,div#l2>input,div#l3>input {
 																<button style=" margin-top:2px;margin-left:2px;" class="fa fa-phone call fl btn btn-success">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 																<button style="margin-left:4px; margin-right:3px;margin-top:2px;" class="fr fa fa-share-alt sndfile fl btn btn-primary">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 																<img tabindex="0" role="button" data-toggle="popover" data-trigger="focus" class="fl nosel emo" style="padding:5px;width:34px;"
-																					src="imgs/emoii.gif">
-																<textarea placeholder="اكتب رسالتك هنا" class="fl filw corner tbox" style="width: 190px;"></textarea>
 
 																<button style=" margin-top:2px;margin-left:2px;" class="fa fa-send sndpm fl btn btn-primary">&nbsp;&nbsp;&nbsp;</button>
 															</div>
@@ -712,36 +594,6 @@ div#l1>input,div#l2>input,div#l3>input {
 															<div style="padding:0px; width:100%;" class=" u-msg   break  fl"></div>
 														</div>
 													</div>
-												</x>
-												<x id="not" class="hid">
-													<div onclick="$(this).remove();" style="min-width:180px;max-width:260px;border:1px solid black;z-index:2110;background-color:#efefef;position:absolute;top:30%;margin-left:30px;padding:5px; "
-																		class="hand corner  ">
-														<center>
-															<div class="corner border label label-primary" style="margin-top:-10px;padding-top:10px;padding-left:15px;width:50%;padding-right:15px;">تنبيه</div>
-														</center>
-													</div>
-												</x>
-
-												<!-- mkr Modal -->
-												<div class="modal fade" id="mkr" role="dialog">
-													<div class="modal-dialog ">
-														<div class="modal-content" style="width:310px;">
-															<div style="color:white;" onclick="$(this).parent().parent().parent().modal('hide') ;" class="modal-header label-primary">
-																<span class="pull-right clickable badge"><i class="fa fa-times"></i></span>
-																<label style="margin:1px;" class="mini fa fa-comments modal-title">إنشاء غرفه جديدة</label>
-															</div>
-															<div class="modal-body" style="padding:1px;">
-																<div class="break" style="background-color:#efefef;padding:5px;">
-																	<input class="rtopic" style="width:200px;" type="text" placeholder="عنوان الغرفه">
-																	<input class="rabout" style="width:200px;" type="text" placeholder="الوصف">
-																	<input class="rwelcome" style="width:200px;" type="text" placeholder="رساله الترحيب">
-																	<input class="rpwd" style="width:200px;" type="password" placeholder="كلمه المرور">
-																	<input class="rmax" style="width:200px;" type="number" placeholder="حجم الغرفه من 2 ألى 40" min="2" max="40">
-																	<label class="checkbox-inline"><input class="rdel" type="checkbox" value="">تثبيت الغرفه</label><br><br>
-																	<button class="rmake btn btn-primary fl"><span class="fa fa-plus">(20)إنشاء الغرفه</span></button>
-																	<button class="rsave btn btn-primary fl"><span class="fa fa-edit">حفظ التعديلات</span></button>
-																	<button class="rdelete btn btn-danger fr"><span class="fa fa-times">حذف</span></button>
-																	<div class="break border corner" id="ops" style="width:100%;padding:2px;"> 
 																	</div>
 																</div>
 															</div>
@@ -812,91 +664,6 @@ div#l1>input,div#l2>input,div#l3>input {
                 <label style="font-weight: 100 !important;padding: 5px  6px 6px 6px;margin: 2px;border: 1px solid;border-radius: 5px;font-size: 13px!important;background-color: #1da001;color: white;" onclick="" class="btn fr fa fa-user-plus plusUser"></label>
                 <label  style="padding: 5px  6px 6px 6px;font-weight: 100 !important;margin: 2px;border: 1px solid;border-radius: 5px;font-size: 12px!important;background-color: white;" class="btn  fr fa fa-users usersGurpe"></label>
 
-                <div class="fl  uzr" style="margin:3px;width:65%;">
-                    <div style="width: 286px;" class="fl filw">
-                        <div style="width:100%;margin-top:0px;" class="fl">
-                            <img class="fl u-ico" alt="" src="">
-                            <div class="fl" style="width:90%;">
-                                <span style="max-width: 100%; padding: 1px 8px; border-radius: 3px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class="corner nosel u-topic dots grupeName">اسم المجموعه</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cont fr filh" style="min-height: 100%; width: 100%; height: 367px;">
-                <div class="addUsrtGru wGr" style="display: none;width: 300px;height: 84%;background-color: white;border: 1px solid #e1e1e1;position: absolute;right: 0;top: 35px;">
-                    <div style="width:100%;height:30px;background-color: #e1e1e1;" class="head nosel bg fl">
-                        <label onclick="$('.chatGrupe .addUsrtGru').hide();" style="padding: 5px  6px 6px 6px;margin: 2px;border: 1px solid;border-radius: 5px;font-size: 13px!important;background-color:  #a60a0a;color: white;" class="btn fr fa fa-close"></label>
-                        <div class="fl" style="width:90%;">
-                            <span style="margin-top: 3px;max-width: 100%; padding: 1px 8px; border-radius: 3px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class="corner nosel u-topic dots">اضافة عضو الى المجموعه</span>
-                        </div>
-                    </div>
-                    <div class="break "style="height: 92%;float: right;width: 100%;"></div>
-                </div>
-
-                <div class="usersInGru wGr" style="display: none;width: 300px;height: 84%;background-color: white;border: 1px solid #e1e1e1;position: absolute;right: 0;top: 35px;">
-                    <div style="width:100%;height:30px;background-color: #e1e1e1;" class="head nosel bg fl">
-                        <label onclick="$('.chatGrupe .usersInGru').hide()" style="padding: 5px  6px 6px 6px;margin: 2px;border: 1px solid;border-radius: 5px;font-size: 13px!important;background-color: #a60a0a;color: white;" class="btn fr fa fa-close"></label>
-                        <div class="fl" style="width:90%;">
-                            <span style="margin-top: 3px;max-width: 100%; padding: 1px 8px; border-radius: 3px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class="corner nosel u-topic dots">المتواجدين في المجموعه</span>
-                        </div>
-                    </div>
-                    <div class="break "style="height: 92%;float: right;width: 100%;"></div>
-                </div>
-                <div class="d2 filh break light" style="height: 355px;" id="d2zaYDrB1z8zuM1uh"></div>
-
-
-                <div class="tablebox footer light fl" style="width:100%;padding:4px;">
-                    <img tabindex="0" role="button" data-toggle="popover" data-trigger="focus" class="fl nosel emo " style="padding:5px;width:34px;" src="imgs/emoii.gif" data-original-title="" title="">
-                    <textarea  placeholder="اكتب رسالتك هنا" class="fl filw corner tbox grupeMsgText" style="width: 315px;"></textarea>
-                    <button style=" margin-top:2px;margin-left:2px;" class="fa fa-send sndGr fl btn btn-primary">&nbsp;&nbsp;&nbsp;</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="usersMsgGr" style="display: none">
-        <div class=" fl uzr border" style="text-align:left;background-color:white;border-   radius:0px!important;width:99%;margin: 0px 1px -1px 2px!important;padding:1px;" v="0">
-            <label style="padding: 5px  6px 6px 6px;margin: 2px;border: 1px    solid;border-radius: 5px;font-size: 13px!important;background-color: #e40000;color: white;" class="btn fr fa fa-minus"></label>
-            <img style="width: 36px; height: 36px; margin-left: 1px; background-image: url(&quot;pic.png&quot;);" class="fitimg fl u-pic ">
-            <div style="width:72%;" class="fl">
-                <div style="width:100%;" class="fl">
-                    <img class="fl u-ico" alt="">
-                    <div class="fl" style="width:90%;">
-                        <span style="margin-top: 1px; padding: 0px 8px; max-width: 100%; border-radius: 3px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);" class="corner u-topic dots">s1d2<span class="fr" style="color:grey;font-size:70%!important;">#578</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="htmlAdgr">
-        <div style="width: 300px;margin: auto;display: none;z-index: 9;position: absolute;background-color: white;right: 0;left: 0;top: 5px;border: 1px solid;">
-            <label style="padding: 5px  6px 6px 6px;margin: 2px -30px 2px 2px;border: 1px solid;border-radius: 5px;font-size: 13px!important;background-color: #e40000;color: white;" class="phide btn fr fa fa-minus leaveGrupe" onclick="$('.addNewGr').remove()"></label>
-            <div class="d2CFce cDSmF" >
-                <div class="rFrNMe N3Hzgf u3bW4e"  style="width: 100%;" >
-                    <div class="aCsJod oJeWuf">
-                        <button type="button" class="btn btn-success fl c3"> التالي</button>
-                        <div class="aXBtI Wic03c c1">
-                            <div class="Xb9hP">
-                                <input type="text" class="whsOnd zHQkBf gruName" badinput="false">
-                                <div jsname="YRMmle" class="AxOyFc snByac" aria-hidden="true">اكتب اسم المجموعه</div>
-                            </div>
-                            <div class="i9lrp mIZh1c"></div>
-                        </div>
-                        <div class="aXBtI Wic03c c2 fl" style="width: 0px; display: none;">
-                            <div class="Xb9hP fl">
-                                <input type="text" class="whsOnd zHQkBf fl usAll" badinput="false">
-                                <div jsname="YRMmle" class="AxOyFc snByac fl" aria-hidden="true">بحث عن الاعضاء</div>
-                            </div>
-                            <div class="i9lrp mIZh1c fl" style="width: 0px; display: none;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <script type="text/javascript" src="grupes.js?77"></script>
 												<script>
 function fixSize(again) {
