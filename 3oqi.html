@@ -427,22 +427,6 @@ div#l1>input,div#l2>input,div#l3>input {
 															</div>
 														</div>
 														<div id="rooms" style="height: 100%;width:100%;" class="light border break tab-pane">
-															<div style="width:100%;margin:0px;border:none;border-radius:0px;" class="nosel label-primary fl  bgg"><button onclick="mkr();" class="border btn label label-success fl   fa fa-plus " style="margin:1px;">غرفه جديدة</button>          </div>
-														</div>
-                                                        <div id="grubesAll" style="height: 100%;width:100%;" class="light break tab-pane">
-                                                            <label onclick="addGruMsg();" style="background-color: ghostwhite;color: black;margin:4px; padding:8px;width:98%;" class="addGruMsg label tc border  btn  label-info fl">محادثه جماعية</label>
-                                                        </div>
-																$(document).ready(function(){
-																	var vl=getv('zoom');
-																	if(vl==''){vl='1';setv('zoom',vl);}
-																	if(isNaN(parseInt(vl))==false)
-																	{ 
-																		$('#zoom').val(vl).trigger('change');fixSize(1);
-																	}
-																});
-															</script>
-															<label onclick="sendpic();" style="background-color: ghostwhite;color: black;margin:4px; padding:8px;width:98%;" class="label tc border  btn  label-info fl"><img style="width:32px;height:32px;margin:-8px;"  src="pic.png" class="fitimg fl borderg spic corner hand">تغير الصوره</label>
-															<label onclick="send('setpic',{pic: 'pic.png'});" style="color: black;margin:4px; padding:8px;width:98%;" class="label tc border btn  label-danger fl"><span class="fl fa fa-user-times"></span>حذف الصوره</label> 
 
 															<label onclick="if (nopm){nopm=false;$(this).find('span').removeClass('fa-check');}else{nopm=true;$(this).find('span').addClass('fa-check');};send('busy',{busy:nopm});" style="background-color: ghostwhite;color: black;margin:4px; padding:8px;width:98%;" class="label tc border  btn   fl"><span class="fa fl"></span>تعطيل المحادثات الخاصه</label>
 															<br>  
