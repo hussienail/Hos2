@@ -29,11 +29,11 @@ a#asim10{font-size:14px!important;width:25%!important;border:1px solid #f0ad4e;m
 .badge{display:inline!important;background-color:#7770;border-radius:33%;border:#1f95a208 solid 1px!important;margin-left:-5px;vertical-align:top}
 div#menu-l{height:55px;width:307px;float:left;position:absolute;top:-11px;right:-7px}
 .ae{border:1px solid #afabab}
-.primaryborder{border-color:#4ba779!important;border-radius:0!important}
+.primaryborder{border-color:#4BA779!important;border-radius:0!important}
 button.fa.fa-sign-out.fl.btn.btn-primary{margin-top:0!important}
 button.fa.fa-send.fl.btn.btn-primary{margin-top:0!important}
 button.fa.fa-send.sndpm.fl.btn.btn-primary{margin-top:0!important}
-.btn-primary:hover{border-left:1px solid #29945F;border-top:1px solid #29945F;border-right:1px solid #376b87;border-bottom:1px solid #42b4bf }
+.btn-primary:hover{border-left:1px solid #29945F;border-top:1px solid #29945F;border-right:1px solid #4BA779;border-bottom:1px solid #42b4bf }
 .tbox{padding:3px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;border-left:3px solid #aee3d1;border-right:3px solid #aee3d1;min-height:28px!important}
 .fr.rating-box{display:none}
 .fa-user-times{margin:0!important;background-color:#FFF;top:58px!important;transform:rotate(-90deg);width:123px!important;position:absolute;left:-41px}
@@ -56,11 +56,11 @@ img.fl.nosel.emo{margin-top:-1px}
 .ae,button.btn{border-radius:3px;border:#e8e8e8 solid 1px}
 a.fl.emobc:focus,i.fa.fa-smile-o:focus,.primaryborder:focus,.btn.btn-success:focus,.btn.btn-primary:focus,.dots:focus,.bg:focus,textarea.fl.filw.corner.tbox:focus,area:focus,input#pass1:focus,input#u1:focus,input#u3:focus,input#pass2:focus,input#u2:focus{outline:0;border-color:none;outline:0;-webkit-box-shadow:none;box-shadow:none}
 div#asim30{background-image:linear-gradient(to bottom,#f1f3f4 0,#f1f3f4 100%);text-align:center;color:#29945F;margin:-27px 0 -20px}
-div#asim31{width:100%;background-color:#13b6b9!important;border-radius:3px;border-left:1px solid #5290ac;border-top:1px solid #5290ac;border-right:1px solid #42b4bf ;border-bottom:1px solid #42b4bf ;margin:1px 0 3px;height:27px;padding:0}
+div#asim31{width:100%;background-color:#4BA779!important;border-radius:3px;border-left:1px solid #5290ac;border-top:1px solid #5290ac;border-right:1px solid #42b4bf ;border-bottom:1px solid #42b4bf ;margin:1px 0 3px;height:27px;padding:0}
 div#tlogins img.fitimg.fl.u-pic,.u-ico,img#asim70{pointer-events:none}
 a#as0{text-decoration:none;margin-right:6px;float:right;border-radius:3px;border-color:#e6e6fa;padding:6px;margin-top:2px;color:red;width:106px;text-align:center;font:normal normal normal 14px/1 FontAwesome}
 iframe#asim29{height:59px;position:absolute;top:32px;right:-215px}
-a#asim33{width:100px;background-color:#29945F!important;border-radius:3px;border-left:1px solid #5290ac;border-top:1px solid #5290ac;border-right:1px solid #376b87;border-bottom:1px solid #376b87;margin:0 0 2px;text-align:center;color:#fff;height:27px;padding:1px;font-size:14px!important}
+a#asim33{width:100px;background-color:#29945F!important;border-radius:3px;border-left:1px solid #5290ac;border-top:1px solid #5290ac;border-right:1px solid #4BA779;border-bottom:1px solid #4BA779;margin:0 0 2px;text-align:center;color:#fff;height:27px;padding:1px;font-size:14px!important}
 input[type="asim"]{width:182px;margin-left:1px;border-radius:3px;text-align:center}
 button.btn.btn-primary.hand.borderg.corner.fa.fa-ban{width:77px;border-radius:6px;height:27px;background-repeat:repeat-x;border-color:#b92c28;background-image:linear-gradient(to bottom,#d9534f 0,#c12e2a 100%);background-color:#c12e2a!important}
 .fa-user:before{margin-right:4px}
